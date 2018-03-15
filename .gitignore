@@ -1,3 +1,14 @@
+# dependencies
 node_modules
 
-.idea
+# logs
+npm-debug.log
+
+# System
+.DS_Store
+
+# Build
+build
+
+#jetBrains
+.
