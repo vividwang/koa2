@@ -1,0 +1,26 @@
+{
+  "name": "koa_item",
+  "version": "1.0.0",
+  "description": "a koa project",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vividwang/koa2.git"
+  },
+  "keywords": [
+    "koa2"
+  ],
+  "author": "w",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vividwang/koa2/issues"
+  },
+  "homepage": "https://github.com/vividwang/koa2#readme",
+  "dependencies": {
+    "koa": "^2.5.0"
+  }
+}
