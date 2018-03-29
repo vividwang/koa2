@@ -1,13 +1,36 @@
 /**
  * Created by w on 2018/3/15.
  */
-const Koa = require('koa');
-const app = new Koa();
+// const Koa = require('koa');
+// const app = new Koa();
+//
+// app.use(async (ctx,next)=>{
+//     ctx.body = "<h1>Hello,Koa</h1>";
+// });
+//
+// app.listen(3000,()=>{
+//     console.info('App running!');
+// });
 
-app.use(async (ctx,next)=>{
-    ctx.body = "<h1>Hello,Koa</h1>";
-});
+import {promisify} from 'util';
+import {resolve as r} from 'path';
+import {readFile,writeFileSync as wfs} from 'fs';
 
-app.listen(3000,()=>{
-    console.info('App running!');
-});
+// promisify(readFile)(r(__dirname,'../package.json')).then(data=>{
+//     data = JSON.parse(data);
+//
+//     console.log(data.name);
+//     wfs(r(__dirname,'./name'),String(data.name),'utf8');
+// });
+
+async function readFileAsync(filePath) {
+    let data = await promisify(readFile)(filePath);
+
+    data = JSON.parse(data);
+    console.log(data.name);
+    wfs(r(__dirname,'./name'),String(data.name),'utf8');
+}
+
+console.log(r(__dirname,'../package.json'));
+
+readFileAsync(r(__dirname,'../package.json'));

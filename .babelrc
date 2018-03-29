@@ -1,0 +1,23 @@
+/**
+ * Created by w on 2018/3/28.
+ */
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "transform-runtime",{
+      "polyfill":false,
+      "regenerator":true
+    }
+    ]
+  ]
+}
