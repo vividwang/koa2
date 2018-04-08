@@ -2,15 +2,31 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/server/cluster.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/tasks/trailer-list.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/process/child_process.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/request.js" />
         <item url="file://$PROJECT_DIR$/dist/server/spider/spider.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/fetchData.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/test.js" />
         <item url="file://$PROJECT_DIR$/dist/dist/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/crawler.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/spider/imgSpider.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/server/index.js" />
       <root url="file://$PROJECT_DIR$/dist/server/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/cluster.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/tasks/trailer-list.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/process/child_process.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/request.js" />
       <root url="file://$PROJECT_DIR$/dist/server/spider/spider.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/fetchData.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/test.js" />
       <root url="file://$PROJECT_DIR$/dist/dist/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/crawler.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/spider/imgSpider.js" />
     </CLASSES>
     <SOURCES />
   </library>

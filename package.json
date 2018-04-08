@@ -32,6 +32,7 @@
     "koa": "^2.5.0",
     "nodemon": "^1.17.2",
     "puppeteer": "^1.2.0",
+    "request": "^2.85.0",
     "util": "^0.10.3"
   },
   "devDependencies": {
