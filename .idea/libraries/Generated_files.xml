@@ -3,30 +3,36 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/server/cluster.js" />
-        <item url="file://$PROJECT_DIR$/dist/server/tasks/trailer-list.js" />
-        <item url="file://$PROJECT_DIR$/dist/server/process/child_process.js" />
-        <item url="file://$PROJECT_DIR$/dist/server/request.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/service/server.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/index.js" />
         <item url="file://$PROJECT_DIR$/dist/server/spider/spider.js" />
         <item url="file://$PROJECT_DIR$/dist/server/fetchData.js" />
         <item url="file://$PROJECT_DIR$/dist/server/test.js" />
         <item url="file://$PROJECT_DIR$/dist/dist/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/decorator.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/tasks/trailer-list.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/process/child_process.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/request.js" />
         <item url="file://$PROJECT_DIR$/dist/server/crawler.js" />
         <item url="file://$PROJECT_DIR$/dist/server/spider/imgSpider.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/dec.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/dist/server/index.js" />
-      <root url="file://$PROJECT_DIR$/dist/server/index.js" />
       <root url="file://$PROJECT_DIR$/dist/server/cluster.js" />
-      <root url="file://$PROJECT_DIR$/dist/server/tasks/trailer-list.js" />
-      <root url="file://$PROJECT_DIR$/dist/server/process/child_process.js" />
-      <root url="file://$PROJECT_DIR$/dist/server/request.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/service/server.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/index.js" />
       <root url="file://$PROJECT_DIR$/dist/server/spider/spider.js" />
       <root url="file://$PROJECT_DIR$/dist/server/fetchData.js" />
       <root url="file://$PROJECT_DIR$/dist/server/test.js" />
       <root url="file://$PROJECT_DIR$/dist/dist/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/decorator.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/tasks/trailer-list.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/process/child_process.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/request.js" />
       <root url="file://$PROJECT_DIR$/dist/server/crawler.js" />
       <root url="file://$PROJECT_DIR$/dist/server/spider/imgSpider.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/dec.js" />
     </CLASSES>
     <SOURCES />
   </library>

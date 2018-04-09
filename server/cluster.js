@@ -4,7 +4,7 @@
 const cluster = require('cluster');
 const OS = require('os');
 
-// console.log(OS.cpus());
+let workers = [];  //存储所有的子进程
 
 const masterProcess = () => {
   console.info(`一共有${OS.cpus().length}个核心`);
@@ -12,19 +12,35 @@ const masterProcess = () => {
 
   for (let i = 0; i < OS.cpus().length; i++) {
     console.info(`正在Fork子进程${i}`);
-    cluster.fork();
+    const worker = cluster.fork();
+
+    workers.push(worker);
+    worker.on('message', message => {
+      console.info(`主进程${process.pid}收到${JSON.stringify(message)}
+          来自${worker.process.pid}`);
+    })
   }
 
-  process.exit();
+  workers.forEach(worker => {
+    console.info(`主进程${process.pid}发消息给子进程${worker.process.pid}`);
+    worker.send(`msg:来自主进程的消息${process.pid}`)
+  }, this)
 };
 
 const child_process = () => {
   console.info(`Worker子进程${process.pid}启动并退出`);
-  process.exit();
+
+  process.on('message', message => {
+    console.info(`Worker子进程${process.pid}收到消息${JSON.stringify(message)}`)
+  });
+
+  console.info(`Worker子进程${process.pid}发消息给主进程`);
+  process.send({msg: `来自子进程的消息${process.pid}`});
+  console.info(`Worker子进程${process.pid}结束`)
 };
 
-if (cluster.isMaster){
+if (cluster.isMaster) {
   masterProcess();
-}else {
+} else {
   child_process();
 }

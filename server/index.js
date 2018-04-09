@@ -1,17 +1,6 @@
 /**
  * Created by w on 2018/3/15.
  */
-// const Koa = require('koa');
-// const app = new Koa();
-//
-// app.use(async (ctx,next)=>{
-//     ctx.body = "<h1>Hello,Koa</h1>";
-// });
-//
-// app.listen(3000,()=>{
-//     console.info('App running!');
-// });
-
 import {promisify} from 'util';
 import {resolve as r} from 'path';
 import {readFile,writeFileSync as wfs} from 'fs';
